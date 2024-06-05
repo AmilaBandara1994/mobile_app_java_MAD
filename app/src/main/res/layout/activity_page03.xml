@@ -5,15 +5,15 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center"
-    tools:context=".Page01">
+    tools:context=".Page03">
+
 
     <TextView
-        android:id="@+id/page1_textView"
+        android:id="@+id/page3_textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="20sp"
-        android:text="Welcome to Page 01"
+        android:text="Welcome to Page 03"
         android:textColor="@color/white"
         android:background="@color/indigo_900"
         android:textAlignment="center"
@@ -23,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/page1_btn_1"
+        android:id="@+id/page3_btn_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Home"
@@ -32,22 +32,22 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/page1_btn_2"
+        android:id="@+id/page3_btn_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Page 01"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/page3_btn_3"
+        app:layout_constraintStart_toStartOf="@id/page3_btn_1" />
+
+    <Button
+        android:id="@+id/page3_btn_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Page 02"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/page1_btn_3"
-        app:layout_constraintStart_toStartOf="@id/page1_btn_1" />
-
-    <Button
-        android:id="@+id/page1_btn_3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Page 03"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/page1_btn_2" />
+        app:layout_constraintStart_toEndOf="@+id/page3_btn_2" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
