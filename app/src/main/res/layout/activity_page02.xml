@@ -48,4 +48,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/page2_btn_2" />
 
+
+    <TextView
+        android:id="@+id/page2_txt_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20sp"
+        android:text="Welcome to Page 02"
+        android:textColor="@color/white"
+        android:background="@color/indigo_900"
+        android:textAlignment="center"
+        android:textSize="38sp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
