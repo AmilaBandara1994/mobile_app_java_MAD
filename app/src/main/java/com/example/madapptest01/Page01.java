@@ -15,6 +15,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class Page01 extends AppCompatActivity {
 
     TextView txt_view ;
+    TextView txt_content ;
     Button btn_first;
     Button btn_second ;
     Button btn_third ;
@@ -34,6 +35,9 @@ public class Page01 extends AppCompatActivity {
         btn_second = findViewById(R.id.page1_btn_2);
         btn_third = findViewById(R.id.page1_btn_3);
         txt_view = findViewById(R.id.page1_textView);
+        txt_content = findViewById(R.id.page1_txt_content);
+        String message =  getIntent().getStringExtra("message");
+        txt_content.setText(message);
 
         btn_first.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,4 +71,6 @@ public class Page01 extends AppCompatActivity {
             startActivity(page3);
         }
     }
+
+
 }
